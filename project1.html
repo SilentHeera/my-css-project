@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- head srction start here -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Project</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+        html, body{
+            height: 100%;
+            width: 100%;
+        }
+        #main{
+            height: 100%;
+            width: 100%;
+            background-color: white;
+            display: grid;
+            grid-template-columns: 25% 25% 50%;
+            grid-template-rows: 26% 56% 18%;
+        }
+        #left-top-left{
+            background-color: white;
+            padding: 30px;
+        }
+        #square{
+            background-color: black;
+            height: 25px;
+            width: 25px;
+            /* margin: 20px; */
+            transform: rotate(45deg);
+        }
+        #left-top-right{
+            background-color: white;
+            /* grid-column: 2 /3;
+            grid-row: 1 /2; */
+            justify-self: right;
+            text-align: right;
+            padding: 40px;
+        }
+        #left-top-right h4{
+            margin-bottom: 50px;
+            font-size: 20px;
+            font-weight: 500px;
+        } 
+        #left-top-right h5{
+            /* margin-bottom: 60px; */
+            font-size: 15px;
+            font-weight: 500px;
+            color: #333;
+        } 
+        #left-center{
+            background-color: white;
+            grid-column: 1 /3;
+            padding: 40px;
+        }
+        #left-center h1{
+            font-size: 5vw;
+            text-transform: uppercase;
+            font-weight: 100;
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 5vw;
+        }
+        #left-center h1:nth-child(2n){
+            text-align: center;
+            
+        }
+        #left-bottom{
+            background-color: white;
+            grid-column: 1 /3;
+        }
+        #left-bottom p{
+            /* width: 100%; */
+            padding: 40px;
+        }
+        #right{
+            background-color: white;
+            grid-column: 3;
+            grid-row: 1 /4;
+            padding: 20px;
+            padding-right: 90px;
+        }
+        #right video{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            object-position: top;
+            border-radius: 5px;
+        }
+        #arrow{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: red;
+            padding: 10px;
+            border-radius: 50%;
+            color: white;
+            transform: translate(-50%, 50%);
+        }
+        #arrow i{
+            font-size: 30px;
+            font-weight: 100;
+        }
+        @media (max-width: 600px){
+            #main{
+            height: 100%;
+            width: 100%;
+            background-color: white;
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-template-rows: 60px 30% 10%;
+        }
+
+
+        /* ------------------------------- */
+        #left-top-left{
+            padding: 10px;
+        }
+        #square{
+            height: 15px;
+            width: 15px;
+        }
+        #left-top-right{
+            padding: 20px;
+        }
+        #left-top-right h4{
+            /* margin-bottom: 10px; */
+            font-size: 10px;
+            font-weight: 250px;
+        } 
+        #left-top-right h5{
+            /* margin-bottom: 60px; */
+            font-size: 5px;
+            font-weight: 250px;
+            
+        } 
+        #left-center{
+            /* margin-top: 10px; */
+            padding: 20px;
+        }
+        #left-center h1{
+            font-size: 10px;
+            font-weight: 50;
+            /* line-height: 20px; */
+        }
+        #left-center h1:nth-child(2n){
+            text-align: center;
+            
+        }
+        #left-bottom{
+            background-color: white;
+            grid-column: 1 /3;
+        }
+        #left-bottom p{
+            /* width: 100%; */
+            padding: 10px;
+            font-size: 10px;
+        }
+        #right video{
+            height: 340px;
+            border-radius: 5px;
+        }
+        #arrow{
+            padding: 5px;
+            margin-bottom: 15px;
+        }
+        #arrow i{
+            font-size: 15px;
+            font-weight: 50;
+        }
+        /* --------------------------------- */
+
+        #right{
+            background-color: white;
+            grid-column: 1 /3;
+            grid-row: 4;
+            padding: 20px;
+            /* padding-right: 30px; */
+        }
+        }
+    </style>
+    
+</head>
+<!-- head section close here -->
+ <!-- body start -->
+<body>
+    <div id="main">
+        <!-- left-top-left start -->
+        <div id="left-top-left">
+            <div id="square"></div>
+        </div>
+        <div id="left-top-right">
+            <h4>Menu</h4>
+            <h5>Home Page</h5>
+            <h5>Portfolio</h5>
+            <h5>Fashion Week -2025</h5>
+            <h5>News/Articles</h5>
+            <h5>Contact</h5>
+        </div>
+        <!-- left-top-right close -->
+        <div id="left-center">
+            <h1>Select</h1>
+            <h1>Fashion</h1>
+            <h1>Mod.05-</h1>
+            <h1>Scene</h1>
+        </div>
+        <div id="left-bottom">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae mollitia facere eveniet nemo blanditiis explicabo ab libero eligendi dolores velit impedit, cum in officiis quam. Suscipit ab voluptas repudiandae dolorum similique rem voluptatum. Accusamus officiis odit cumque nulla omnis iure!</p>
+        </div>
+        <div id="right">
+            <video autoplay loop muted src="./041dfb4b690db6766b7806fc5960348e.mp4"></video>
+        </div>
+        <div id="arrow"><i class="ri-arrow-right-line"></i></div>
+    </div>
+</body>
+<!-- body close -->
+</html>
